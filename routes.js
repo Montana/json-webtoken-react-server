@@ -41,7 +41,7 @@ const jwtStrategy = new JwtStrategy(jwtOptions, function (payload, done) {
   User.findById(payload.sub)
     .then((user) => {
       if (user) {
-        done(null, user); // this is req.user
+        done(null, user);
       } else {
         done(null, false);
       }
