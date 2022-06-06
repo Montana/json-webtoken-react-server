@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    minlength: 4, // make this at least 12 in production
+    minlength: 4, // probably want to make this actually 10+ in prod - montana
   },
 });
 
