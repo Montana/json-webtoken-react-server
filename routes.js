@@ -6,7 +6,7 @@ const JwtStrategy = require("passport-jwt").Strategy;
 const { ExtractJwt } = require("passport-jwt");
 
 const User = require("../users/User");
-const secret = "that is what I shared yesterday lol";
+const secret = "your secrets";
 
 const localStrategy = new LocalStrategy(function (username, password, done) {
   User.findOne({ username })
