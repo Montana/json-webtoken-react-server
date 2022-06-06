@@ -1,3 +1,3 @@
 ## Notes
 
-Your CSS/Logo can be whatever, not going to add thme into core React project.
+Your CSS/Logo can be whatever, not going to add them into core React project.
