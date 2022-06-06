@@ -6,10 +6,8 @@ function App() {
   const [nickName, setNickName] = useState('')
   const [newMessageText, setNewMessageText] = useState('')
   const [socket, setSocket] = useState(null)
-
-   
   
-  useEffect(() => {
+useEffect(() => {
     const socket = socketIOClient('http://localhost:3001');
     setSocket(socket);
     
